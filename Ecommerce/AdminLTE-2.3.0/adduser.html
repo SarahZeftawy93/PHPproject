@@ -136,9 +136,9 @@
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                 <li><a href="adduser.html"><i class="fa fa-circle-o"></i>Add user</a></li>
-                 <li><a href="edituser.html"><i class="fa fa-circle-o"></i>Edit user</a></li>
-                <li><a href="pages/charts/flot.html"><i class="fa fa-circle-o"></i>Delete user</a></li>
+                <li><a href="adduser.html"><i class="fa fa-circle-o"></i>Add user</a></li>
+                <li><a href="edituser.html"><i class="fa fa-circle-o"></i>Edit user</a></li>
+                <li><a href="deleteuser.html"><i class="fa fa-circle-o"></i>Delete user</a></li>
               </ul>
             </li>
             <li class="active treeview">
@@ -227,7 +227,22 @@
         <section class="content">
           <div class="row">
             <div class="col-lg-3 col-xs-6">
-               
+               <form method="post" action="adduser.php">
+                  <fieldset>
+                     <legend>User Data</legend>
+                        User name: <input type="text" name="username"/><br/><br/><br/>
+                        Password: <input type="password" name="password"/><br/><br/><br/>
+                        Email: <input type="text" name="email"/><br/><br/><br/>
+                        Birthday: <input type="text" name="birth"/><br/><br/><br/>
+                        Job: <input type="text" name="job"/><br/><br/><br/>
+                        Admin: <input type="radio" name="admin" value="1"/>
+                        User: <input type="radio" name="admin" value="0"/><br/><br/><br/>
+                        Credit limit: <input type="text" name="credit"/><br/><br/><br/>
+                        Address: <textarea cols="30" name="address"></textarea><br/><br/><br/>
+                        <input type="submit" name="submit"/>
+                        <input type="reset" name="reset"/>
+                  </fieldset>
+               </form>
             </div><!-- ./col -->
             <div class="col-lg-3 col-xs-6">
               <!-- small box -->

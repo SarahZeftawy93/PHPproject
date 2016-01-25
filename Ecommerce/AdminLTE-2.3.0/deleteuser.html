@@ -136,9 +136,9 @@
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                 <li><a href="adduser.html"><i class="fa fa-circle-o"></i>Add user</a></li>
-                 <li><a href="edituser.html"><i class="fa fa-circle-o"></i>Edit user</a></li>
-                <li><a href="pages/charts/flot.html"><i class="fa fa-circle-o"></i>Delete user</a></li>
+                <li><a href="adduser.html"><i class="fa fa-circle-o"></i>Add user</a></li>
+                <li><a href="edituser.html"><i class="fa fa-circle-o"></i>Edit user</a></li>
+                <li><a href="deleteuser.html"><i class="fa fa-circle-o"></i>Delete user</a></li>
               </ul>
             </li>
             <li class="active treeview">
@@ -227,7 +227,13 @@
         <section class="content">
           <div class="row">
             <div class="col-lg-3 col-xs-6">
-               
+               <form method="post" action="deleteuser.php">
+                  <fieldset>
+                     <legend>Delete User</legend>
+                     Enter user name to be deleted: <input type="text" name="del"/><br/><br/>
+                     <input type="submit" name="submit" value="Delete User"/>
+                  </fieldset>
+               </form>
             </div><!-- ./col -->
             <div class="col-lg-3 col-xs-6">
               <!-- small box -->
