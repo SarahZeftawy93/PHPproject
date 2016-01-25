@@ -136,9 +136,9 @@
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                <li><a href="adduser.html"><i class="fa fa-circle-o"></i>Add user</a></li>
-                <li><a href="edituser.html"><i class="fa fa-circle-o"></i>Edit user</a></li>
-                <li><a href="deleteuser.html"><i class="fa fa-circle-o"></i>Delete user</a></li>
+                 <li><a href="adduser.html"><i class="fa fa-circle-o"></i>Add user</a></li>
+                 <li><a href="edituser.html"><i class="fa fa-circle-o"></i>Edit user</a></li>
+                 <li><a href="deleteuser.html"><i class="fa fa-circle-o"></i>Delete user</a></li>
               </ul>
             </li>
             <li class="active treeview">
@@ -147,8 +147,8 @@
               </a>
               <ul class="treeview-menu">
                 <li class="active"><a href="addcategory.html"><i class="fa fa-circle-o"></i>Add category</a></li>
-                <li><a href="index2.html"><i class="fa fa-circle-o"></i>Edit category</a></li>
-                <li><a href="index2.html"><i class="fa fa-circle-o"></i>Remove category</a></li>
+                <li><a href="editcategory.html"><i class="fa fa-circle-o"></i>Edit category</a></li>
+                <li><a href="removecategory.html"><i class="fa fa-circle-o"></i>Remove category</a></li>
               </ul>
             </li>
             <li class="treeview">
@@ -227,11 +227,11 @@
         <section class="content">
           <div class="row">
             <div class="col-lg-3 col-xs-6">
-               <form method="post" action="deleteuser.php">
+               <form method="post" action="addcategory.php">
                   <fieldset>
-                     <legend>Delete User</legend>
-                     Enter user name to be deleted: <input type="text" name="del"/><br/><br/>
-                     <input type="submit" name="submit" value="Delete User"/>
+                     <legend>Add Category</legend>
+                     Enter category name: <input type="text" name="cat"/>
+                     <input type="submit" name="send" value="OK"/>
                   </fieldset>
                </form>
             </div><!-- ./col -->

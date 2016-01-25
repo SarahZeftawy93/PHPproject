@@ -138,7 +138,7 @@
               <ul class="treeview-menu">
                  <li><a href="adduser.html"><i class="fa fa-circle-o"></i>Add user</a></li>
                  <li><a href="edituser.html"><i class="fa fa-circle-o"></i>Edit user</a></li>
-                <li><a href="pages/charts/flot.html"><i class="fa fa-circle-o"></i>Delete user</a></li>
+                 <li><a href="deleteuser.html"><i class="fa fa-circle-o"></i>Delete user</a></li>
               </ul>
             </li>
             <li class="active treeview">
@@ -146,9 +146,9 @@
                 <i class="fa fa-dashboard"></i> <span>Categories</span> <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                <li class="active"><a href="index.html"><i class="fa fa-circle-o"></i>Add category</a></li>
-                <li><a href="index2.html"><i class="fa fa-circle-o"></i>Edit category</a></li>
-                <li><a href="index2.html"><i class="fa fa-circle-o"></i>Remove category</a></li>
+                <li class="active"><a href="addcategory.html"><i class="fa fa-circle-o"></i>Add category</a></li>
+                <li><a href="editcategory.html"><i class="fa fa-circle-o"></i>Edit category</a></li>
+                <li><a href="removecategory.html"><i class="fa fa-circle-o"></i>Remove category</a></li>
               </ul>
             </li>
             <li class="treeview">
