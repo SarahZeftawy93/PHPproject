@@ -1,2 +1,0 @@
-# PHPproject
-E-Commerce site
