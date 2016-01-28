@@ -158,9 +158,9 @@
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                <li><a href="pages/UI/general.html"><i class="fa fa-circle-o"></i>Add sub category</a></li>
-                <li><a href="pages/UI/icons.html"><i class="fa fa-circle-o"></i>Edit sub category</a></li>
-                <li><a href="pages/UI/buttons.html"><i class="fa fa-circle-o"></i>Remove sub category</a></li>
+                <li><a href="addsubcategory.html"><i class="fa fa-circle-o"></i>Add sub category</a></li>
+                <li><a href="editsubcategory.html"><i class="fa fa-circle-o"></i>Edit sub category</a></li>
+                <li><a href="removesubcategory.html"><i class="fa fa-circle-o"></i>Remove sub category</a></li>
               </ul>
             </li>
             <li class="treeview">
