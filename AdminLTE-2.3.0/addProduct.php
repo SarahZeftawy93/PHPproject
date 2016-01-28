@@ -227,23 +227,42 @@
             <section class="content">
                <div class="row">
                   <div class="col-lg-3 col-xs-6">
-                     <form method="post" action="edituser.php">
+                     <form method="post" action="callAddProduct.php">
                         <fieldset>
-                           <legend>Edit User</legend>
-                           Enter user name to edit:
-                           <input type="text" name="editedun"/><br/><br/><br/><br/>
+                           <legend>Add Product</legend>
+                           Enter product name: <input type="text" name="product"/><br/><br/>
+                           <span>This product is under sub-category: </span>
+                           <select name="scat">
+                           <!--Under category: <br/><input type="text" name="cat"/><br/><br/>-->
+                              <?php
+                              //display category in html select element
+                              include '../subcategory.php';
+                              $data = [];
+                              $subcatAction = new subcategory();
+                              $result = $subcatAction->getSubCategory();
 
-                           User name: <input type="text" name="username"/><br/><br/><br/>
-                           Password: <input type="password" name="password"/><br/><br/><br/>
-                           Email: <input type="text" name="email"/><br/><br/><br/>
-                           Birthday: <input type="text" name="birth"/><br/><br/><br/>
-                           Job: <input type="text" name="job"/><br/><br/><br/>
-                           Admin: <input type="radio" name="admin" value="1"/>
-                           User: <input type="radio" name="admin" value="0"/><br/><br/><br/>
-                           Credit limit: <input type="text" name="credit"/><br/><br/><br/>
-                           Address: <textarea cols="30" name="address"></textarea><br/><br/><br/>
-                           <input type="submit" name="submit"/>
-                           <input type="reset" name="reset"/>
+                              while ($row = mysqli_fetch_array($result))
+                              {
+                                 $data[] = $row;
+                              }
+
+                              foreach ($data as $key => $value)
+                              {
+                                 ?>
+                                 <option value="<?php echo $value[1] ?>">
+                                    <?php
+                                    print_r($value[2]);
+                                    ?>
+                                 </option>
+                                 <?php
+                              }
+                              ?>
+                           </select><br/><br/>
+                           <span>Product price:</span>
+                           <input type="text" name="price"/> $<br/><br/>
+                           <span>Quantity: </span>
+                           <input type="text" name="quantity"/><br/><br/>
+                           <input type="submit" name="send" value="OK"/>
                         </fieldset>
                      </form>
                   </div><!-- ./col -->

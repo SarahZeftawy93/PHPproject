@@ -169,9 +169,9 @@
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                <li><a href="pages/forms/general.html"><i class="fa fa-circle-o"></i>Add product</a></li>
-                <li><a href="pages/forms/advanced.html"><i class="fa fa-circle-o"></i>Edit product</a></li>
-                <li><a href="pages/forms/editors.html"><i class="fa fa-circle-o"></i>Remove product</a></li>
+                <li><a href="addProduct.php"><i class="fa fa-circle-o"></i>Add product</a></li>
+                <li><a href="editProduct.html"><i class="fa fa-circle-o"></i>Edit product</a></li>
+                <li><a href="deleteProduct.html"><i class="fa fa-circle-o"></i>Remove product</a></li>
               </ul>
             </li>
             <li>
