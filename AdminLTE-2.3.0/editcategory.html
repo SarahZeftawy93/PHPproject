@@ -136,7 +136,7 @@
                         <i class="fa fa-angle-left pull-right"></i>
                      </a>
                      <ul class="treeview-menu">
-                        <li><a href="adduser.html"><i class="fa fa-circle-o"></i>Add user</a></li>
+                        <li><a href="addInterestFromAdmin.php"><i class="fa fa-circle-o"></i>Add user</a></li>
                         <li><a href="edituser.html"><i class="fa fa-circle-o"></i>Edit user</a></li>
                         <li><a href="deleteuser.html"><i class="fa fa-circle-o"></i>Delete user</a></li>
                      </ul>
