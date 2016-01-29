@@ -48,8 +48,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			 <div class="cssmenu">
 				<ul>
 					<li class="active"><a href="login.html">Account</a></li> |
-					<li><a href="checkout.html">Wishlist</a></li> |
-					<li><a href="checkout.html">Checkout</a></li> |
 					<li><a href="login.html">Log Out</a></li>
 				</ul>
 			</div>

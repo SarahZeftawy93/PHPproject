@@ -158,6 +158,13 @@ class user
       $sql = "update Customer set password='$pass' where Name='$usern'";
       $result = mysqli_query(self::$conn, $sql);
    }
+   
+   function addInterests($usern, $interest)
+   {
+      $i = implode(", ", $interest);
+      $sql = "update Customer set interests='$i' where Name='$usern'";
+      $result = mysqli_query(self::$conn, $sql);
+   }
 
 }
 

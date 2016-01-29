@@ -68,14 +68,46 @@
          <section style="padding-bottom: 50px; padding-top: 50px;">
             <div class="row">
                <div class="col-md-4">
-                  <img src="assets/img/250x250.png" class="img-rounded img-responsive" />
-                  <br />
-                  <br />
-                  <a class='btn btn-primary' href=''>
-                     Choose profile pic...
-                     <input type="file" style='position:absolute;z-index:2;top:0;left:0;filter: alpha(opacity=0);-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";opacity:0;background-color:transparent;color:transparent;' name="file_source" size="40"  onchange='$("#upload-file-info").html($(this).val());'>
-                  </a>
+                  <form action="profileimg.php" method="post" enctype="multipart/form-data">
+                     <?php
+                     $name = $_SESSION['imgName'];
+                     if ($name == null)
+                        echo '<img width = "250px" height = "250px" src="assets/img/250x250.png" class="img-rounded img-responsive" />';
+                     else
+                     {
+                        echo "<img width = '250px' height = '250px' src='assets/img/$name'/>";
+                     }
+                     ?>
+                     <br />
+                     <br />
+                     <input type="file" class="btn btn-primary" name="img" id="fileToUpload" value="Change image">
+                     <br/>
+                     <input class="btn btn-primary" type="submit" value="Upload Image" name="avatar">
+                  </form>
                   <br /><br/>
+                  <label>Intersets: </label>
+                  <form action="../AdminLTE-2.3.0/addInterest.php" method="post">
+                        <?php
+                              //display category in html select element
+                              include '../subcategory.php';
+                              $data = [];
+                              $subcatAction = new subcategory();
+                              $result = $subcatAction->getSubCategory();
+
+                              while ($row = mysqli_fetch_array($result))
+                              {
+                                 $data[] = $row;
+                              }
+
+                              foreach ($data as $key => $value)
+                              {
+                                 ?>
+                                 <input type="checkbox" name="interset[]" value="<?php echo $value[2] ?>"/> <?php echo $value[2] ?><br/>                                 
+                                 <?php
+                              }
+                              ?>
+                        <input type="submit" name="submit" value="Submit"/>
+                     </form>
                </div>
                <div class="col-md-8">
                   <!--                    <div class="alert alert-info">
@@ -85,16 +117,6 @@
                                               Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
                                                3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. 
                                           </p>
-                                      </div>-->
-                  <!--                    <div >
-                                          <a href="#" class="btn btn-social btn-facebook">
-                                              <i class="fa fa-facebook"></i>&nbsp; Facebook</a>
-                                          <a href="#" class="btn btn-social btn-google">
-                                              <i class="fa fa-google-plus"></i>&nbsp; Google</a>
-                                          <a href="#" class="btn btn-social btn-twitter">
-                                              <i class="fa fa-twitter"></i>&nbsp; Twitter </a>
-                                          <a href="#" class="btn btn-social btn-linkedin">
-                                              <i class="fa fa-linkedin"></i>&nbsp; Linkedin </a>
                                       </div>-->
                   <div class="form-group col-md-8">
                      <form method="post" action="changePass.php">
@@ -107,24 +129,25 @@
                         <label>Confirm New Password</label>
                         <input type="password" class="form-control" name="renewpassword"/>
                         <br>
-                        <a href="#" class="btn btn-warning">Change Password</a>
+
+                        <input type="submit" class="btn btn-warning" name="send" value="Change Password"/>
                      </form>
                      <br/><br/>
                      <form method="get" action="editme.php">
                         <label>Registered Username</label>
-                        <input type="text" class="form-control" name="username">
+                        <input type="text" class="form-control" name="username"/>
                         <label>Registered Email</label>
-                        <input type="text" class="form-control" name="email">
+                        <input type="text" class="form-control" name="email"/>
                         <label>Registered Address</label>
-                        <input type="text" class="form-control" name="address">
+                        <input type="text" class="form-control" name="address"/>
                         <label>Registered Birth</label>
-                        <input type="text" class="form-control" name="birth">
+                        <input type="text" class="form-control" name="birth"/>
                         <label>Registered Job</label>
-                        <input type="text" class="form-control" name="job">
+                        <input type="text" class="form-control" name="job"/>
                         <label>Registered Credit Limit</label>
-                        <input type="text" class="form-control" name="credit">
+                        <input type="text" class="form-control" name="credit"/>
                         <br>
-                        <a href="#" class="btn btn-success">Update Details</a>
+                        <input type="submit" class="btn btn-success" name="send" value="Update Details"/>
                      </form>
                   </div>
                </div>
