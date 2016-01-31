@@ -169,7 +169,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				</ul>
 			</li>
 		</ul>
-	    <ul class="last"><li><a href="#">Cart(0)</a></li></ul>
+        <ul class="last"><li><a href="buy.php">Cart(0)</a></li></ul>
 	  </div>
     </div>
      <div class="clear"></div>
