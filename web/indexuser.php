@@ -58,11 +58,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	    <div class="wrap">
 			<div class="header-bottom-left">
 				<div class="logo">
-					<a href="index.html"><img src="images/logo.png" alt=""/></a>
+					<a href="index.php"><img src="images/logo.png" alt=""/></a>
 				</div>
 				<div class="menu">
 	            <ul class="megamenu skyblue">
-			<li class="active grid"><a href="index.html">Home</a></li>
+			<li class="active grid"><a href="index.php">Home</a></li>
 			<li><a class="color4" href="#">women</a>
 				<div class="megapanel">
 					<div class="row">
@@ -169,7 +169,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				</ul>
 			</li>
 		</ul>
-        <ul class="last"><li><a href="buy.php">Cart(0)</a></li></ul>
+	    <ul class="last"><li><a href="#">Cart(0)</a></li></ul>
 	  </div>
     </div>
      <div class="clear"></div>

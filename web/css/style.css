@@ -3468,3 +3468,15 @@ ul#slider4 h4 {
 		width: 98%;
 	}
 }
+.txt{
+	font-size: 0.95em;
+    color: #777;
+    padding: 8px;
+    outline: none;
+    margin: 10px 0;
+    width: 91%;
+    font-family: 'Exo 2', sans-serif;
+    border: none;
+    box-shadow: 0 0 2px #aaa;
+    -webkit-box-shadow: 0 0 2px #aaa;
+}
