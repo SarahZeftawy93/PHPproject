@@ -100,7 +100,7 @@ $("#checkDiv").on('click',".check", function(event) {
 					else if(event == "valid") 
 					{
 						$("#sp2").html("");
-						console.log('asdfghbjnkm');
+						// console.log('asdfghbjnkm');
 					}
 				})
 				.fail(function() {

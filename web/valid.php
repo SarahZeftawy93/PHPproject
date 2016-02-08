@@ -13,7 +13,8 @@ if (isset($_POST)) {
 	$user->addUser();
 	session_start();
 	$_SESSION['email'] = $_POST['email'];
-	echo '<META HTTP-EQUIV=REFRESH CONTENT="1; localhost/PHPproject/web/men.html">';
+	header('location: men.html');
+	// echo '<META HTTP-EQUIV=REFRESH CONTENT="1; men.html">';
  	// echo "string";
  }
  else{

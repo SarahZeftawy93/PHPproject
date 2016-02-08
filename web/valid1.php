@@ -9,12 +9,13 @@ if ($_method == 'GET') {
  // 	var_dump($r);
  // 	echo "</pre>";
 	
-	if ($r = 0) {
+	if ($r == 0) {
 		echo "valid";
 	}
-	else if ($r = 1) {
-		# code...
+	else {
 		echo "invalid";
 	}
 }
+// $user = new user();
+// $r    = $user->displayUser($_GET['email']);
 ?>
